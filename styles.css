@@ -1,2 +1,12 @@
-<link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Podkova">
+.desc1 {
+    padding: 0% 20%;
+    max-height: 50vh;
+}
+.esq1 {
+    width: 30%;
+}
+
+.dir1 {
+    width: 70%;
+    padding-left: 5%;
+}
