@@ -1,7 +1,9 @@
-body{
-  padding: 25px;
+h1 {
+  color: #228B22;
+  background-color: yellow;
+  border: 1px solid black;
 }
-.title {
-	color: #228B22;
-	font-family: Candara;
+
+p {
+  color: red;
 }
