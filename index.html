@@ -1,15 +1,66 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Doni Kurtz</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-      <h1 class="title">Doni Kurtz </h1>
-      <section class="desc1 flex row">
-	  <div class="dir1 column">
-			I am a mathematician with a master's degree in algebra's area and specialization in complex data mining for data science. My career is centered around data sciences in the financial sector. I bring a wealth of expertise in mathematical principles and data analysis to the table. My work revolves around translating complex financial data into actionable insights, aiding in well-informed decision-making. With a commitment to excellence and a deep-seated passion for numbers, I've carved a niche for myself in the financial data sciences industry, earning respect and recognition for my contributions.
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doni Kurtz</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* Custom styles */
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .profile-picture {
+      /* Placeholder for image size and border radius */
+      width: 150px;
+      height: 150px;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <div class="container mx-auto p-6">
+    <div class="flex justify-between">
+      <div class="flex space-x-2">
+        <button class="bg-white p-2 rounded text-sm">Sobre</button>
+        <button class="bg-gray-200 p-2 rounded text-sm">Projetos</button>
+        <button class="bg-white p-2 rounded text-sm">Tutoriais</button>
       </div>
-	  </section>
-  </body>
+      <div class="flex space-x-2">
+        <button class="bg-blue-500 text-white p-2 rounded text-sm">PT</button>
+        <button class="bg-white p-2 rounded text-sm">EN</button>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row mt-6">
+      <div class="flex flex-col items-center md:items-start md:w-1/2">
+        <img src="https://placehold.co/150x150" alt="Placeholder image for Gabriela Caesar profile picture" class="profile-picture mb-4">
+        <h1 class="text-3xl font-semibold">Gabriela Caesar</h1>
+        <p class="text-sm my-4">
+          I am a mathematician with a master's degree in algebra's area and specialization in complex data mining for data science. My career is centered around data sciences in the financial sector. I bring a wealth of expertise in mathematical principles and data analysis to the table. My work revolves around translating complex financial data into actionable insights, aiding in well-informed decision-making. With a commitment to excellence and a deep-seated passion for numbers, I've carved a niche for myself in the financial data sciences industry, earning respect and recognition for my contributions.
+        </p>
+        <div class="flex flex-wrap gap-2 text-sm">
+          <span class="border p-2 rounded">Python</span>
+          <span class="border p-2 rounded">SAS</span>
+          <span class="border p-2 rounded">Teradata</span>
+        </div>
+      </div>
+      <div class="md:w-1/2 mt-6 md:mt-0">
+        <div class="flex justify-end">
+          <a href="#" class="text-blue-600 mr-4"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-blue-600 mr-4"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="text-blue-600"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="bg-white p-4 rounded mt-4">
+          <h2 class="text-lg font-semibold">Contato</h2>
+          <p class="text-sm">E-mail: donizetti.kurtz@outlook.com</p>
+        </div>
+        <div class="bg-white p-4 rounded mt-4">
+          <h2 class="text-lg font-semibold">Qualificação</h2>
+          Teste
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
