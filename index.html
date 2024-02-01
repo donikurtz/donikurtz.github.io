@@ -41,6 +41,12 @@
     p {
       font-size: 16px;
       line-height: 1.5;
+      text-align: justify;
+      hyphens: auto;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      -ms-hyphens: auto;
+      -o-hyphens: auto;
     }
     a {
       color: #0070c9;
@@ -58,6 +64,9 @@
 </head>
 <body>
   <div class="container">
+    <div style="text-align: right;">
+      <button class="button" id="toggleLanguage">EN</button>
+    </div>
     <div class="section">
       <div style="text-align: center;">
         <img src="IMG-perfil.jpg" alt="Imagem de Doni para o perfil" class="profile-picture">
@@ -88,6 +97,25 @@
       <p>Março 2021 a Novembro 2023 - Data Scientist/Bradesco</p>
       <p>Agosto 2018 a Fevereiro 2021 - Consultor/Management Solutions</p>
     </div>
+    <div style="text-align: center;">
+      <a href="articles.html" class="button">Artigos</a>
+    </div>
   </div>
+  <script>
+    const toggleLanguageButton = document.getElementById('toggleLanguage');
+    let language = 'EN';
+
+    toggleLanguageButton.addEventListener('click', () => {
+      if (language === 'EN') {
+        language = 'PT';
+        toggleLanguageButton.textContent = 'PT';
+        // Replace content with Portuguese version here
+      } else {
+        language = 'EN';
+        toggleLanguageButton.textContent = 'EN';
+        // Replace content with English version here
+      }
+    });
+  </script>
 </body>
 </html>
