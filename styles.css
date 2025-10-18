@@ -99,5 +99,8 @@ a:focus-visible{ outline: var(--ring); border-radius:8px; }
 .article-conclusion {
   font-style: italic;
   color: var(--muted);
-  margin-top: 32px; /* cria um respiro elegante acima */
+  margin-top: 32px;
+}
+.article-conclusion + .article-conclusion {
+  margin-top: 8px;
 }
