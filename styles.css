@@ -94,3 +94,10 @@ a:focus-visible{ outline: var(--ring); border-radius:8px; }
   position:static; width:auto; height:auto; padding:8px 12px; background:var(--brand);
   color:var(--brand-ink); border-radius:8px;
 }
+
+/* Conclusão com tom editorial sutil */
+.article-conclusion {
+  font-style: italic;
+  color: var(--muted);
+  margin-top: 32px; /* cria um respiro elegante acima */
+}
