@@ -15,14 +15,11 @@
     <nav class="nav" aria-label="Navegação principal">
       <a href="index.html">Início</a>
       <a href="essay.html">Explorações</a>
-      <a href="em_breve.html">Em breve</a>
       <a href="CV - Donizetti Kurtz.pdf" aria-label="Abrir currículo em PDF">Currículo</a>
     </nav>
   </header>
 
   <main id="conteudo" class="container" role="main">
-    <p><a href="essay.html">← Voltar para Explorações</a></p>
-
     <article class="section longread" aria-labelledby="titulo-artigo">
       <header>
         <h2 id="titulo-artigo">Lorem ipsum dolor sit amet.</h2>
@@ -43,7 +40,8 @@
   </main>
 
   <footer class="container" role="contentinfo">
-    <p><a href="essay.html">← Voltar para Explorações</a></p>
+    <p>© <span id="year"></span> Doni Kurtz</p>
   </footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
