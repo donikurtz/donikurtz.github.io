@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lorem ipsum dolor sit amet. – Doni Kurtz</title>
+  <title>LLM em Ambientes Corporativos. – Doni Kurtz</title>
   <link rel="stylesheet" href="styles.css">
   <meta name="description" content="Artigo de Doni Kurtz">
 </head>
@@ -22,18 +22,33 @@
   <main id="conteudo" class="container" role="main">
     <article class="section longread" aria-labelledby="titulo-artigo">
       <header>
-        <h2 id="titulo-artigo">Lorem ipsum dolor sit amet.</h2>
-        <p class="article-meta">por Doni Kurtz — 02/04/2024</p>
+        <h2 id="titulo-artigo">LLM em Ambientes Corporativos.</h2>
+        <p class="article-meta">por Doni Kurtz — 18/10/2025</p>
         <figure>
           <img src="IMG-art1.png" alt="Imagem ilustrativa abstrata do artigo">
           <figcaption class="article-meta">Imagem ilustrativa</figcaption>
         </figure>
       </header>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla auctor lacus non erat vestibulum auctor. Praesent auctor vehicula risus, ut dignissim nisl.</p>
-      <p>Curabitur dignissim, orci sed sollicitudin condimentum, massa magna sollicitudin eros, vitae tempor odio elit quis dui.</p>
-      <p>Ut sed neque id libero viverra vulputate. Maecenas ac nisi sit amet est aliquam tincidunt.</p>
+      <p>Ouvi o episódio <a href="https://www.iasobcontrole.tech/180-adotando-ia-corporativa-com-seguranca-com-claudionor-coelho-jr-caio-da-zscaler/" rel="noopener noreferrer">180: Adotando IA corporativa com segurança, com Claudionor Coelho Jr., CAIO da Zscaler</a> do podcast <a href="https://www.iasobcontrole.tech/" rel="noopener noreferrer">IA Sob Controle</a>, que, como o título sugere, é uma entrevista bem conduzida com <a href="https://www.linkedin.com/in/claudionor-coelho-jr-b156b01/" rel="noopener noreferrer">Claudionor Coelho Jr.</a>, Chief AI Officer na Zscaler.</p>
+
+      <p>Recomendo que desfrutem do episódio na íntegra, pois poucas vezes temos a oportunidade de ouvir as percepções de alguém que, de fato, está dentro do meio corporativo desenvolvendo o uso de inteligência artificial.</p>
+
+      <p>Além de todo o conteúdo sobre riscos de segurança corporativa, riscos reputacionais e legais que as “alucinações” podem gerar, bem como das limitações técnicas e estruturais das LLMs e da ilusão de que sua implementação é uma bala de prata, três pontos chamaram minha atenção em especial:</p>
+
+      <h3>1. Dados internos como diferencial</h3>
+      <p>Uma das razões pelas quais grandes corporações são bem-sucedidas no que fazem é que elas têm dados para saber como fazer. Bancos obtêm lucros emprestando dinheiro porque sabem para quem emprestar: possuem dados suficientes para romper a assimetria de informação e conhecer as condições financeiras de seus clientes.</p>
+      <p>Esses mesmos dados internos agora podem fazer com que as soluções com LLM deixem de ser genéricas e entediantes, passando a agregar valor operacional real. Assim, a adoção de agentes e RAG (<em>Retrieval-Augmented Generation</em>) é fundamental para enriquecer o modelo com informações contextuais reais e atualizadas, permitindo respostas úteis e alinhadas ao negócio. Já que, originalmente, os modelos fundamentais não foram treinados com esses dados, usar sistemas baseados em inteligência artificial generativa apenas com prompts muito específicos pode ter um efeito parecido com o <em>overfitting</em> em modelos tradicionais: o sistema funciona bem para aquelas perguntas pré-testadas, mas falha assim que o usuário foge minimamente do script.</p>
+
+      <h3>2. Treinar LLM não é um projeto de negócio</h3>
+      <p>Construir um modelo fundamental do zero ou mesmo fazer <em>fine-tuning</em> em larga escala é trabalho de engenharia de software e infraestrutura pesada. Esse não é um trabalho para <em>squads</em> de produto ou times de inovação isolados e, estrategicamente, não deveria ser um projeto de negócio. Há uma subestimação da complexidade envolvida tanto em termos de recursos computacionais (GPU, armazenamento, latência, custo energético) quanto de engenharia de dados e segurança.</p>
+
+      <h3>3. LLM como orquestrador</h3>
+      <p>Pensar em orquestrar e contextualizar as LLMs deveria ser o foco das empresas. Um caso bastante simples que ele usa para desmistificar a percepção equivocada que muitas organizações têm sobre a capacidade dos modelos de linguagem generativa é explicar que o modelo, em si, não “sabe fazer contas” no sentido computacional tradicional. O que acontece, na prática, é que quando você pede para a LLM fazer <code>2 + 2</code>, ela não está somando. Ela está chamando uma aplicação que usa, por exemplo, uma dependência de Python como o Pandas, faz a operação e devolve o resultado.</p>
+      <p>Dessa forma, as corporações não precisam (nem devem) treinar modelos para tarefas determinísticas. O correto é integrar agentes e ferramentas externas bem definidas e deixar a LLM atuar como orquestradora inteligente. Isso reforça o ponto dele de que o núcleo desses projetos é engenharia de software, não treinamento de modelo.</p>
+
+      <p>A importância dos dados internos não é algo que vejo sendo muito negligenciado, mas o foco dos projetos de LLM em uma concepção puramente de engenharia pode ser um erro mais comum. Por fim, um ponto bônus para incentivar vocês a ouvirem Claudionor: a reflexão sobre o poder de correlação das LLMs e como isso pode impactar até mesmo a privacidade dos empregados é digna de roteiro de filme de ficção científica empolgante — e, caso ninguém pense a respeito, estará na estante de “baseado em fatos reais”.</p>
+
 
       <!-- Dica: para subtítulos dentro do artigo, use <h3> ... </h3> -->
     </article>
